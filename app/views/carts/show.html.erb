@@ -1,10 +1,10 @@
 <p id="notice"><%= notice %></p>
 <%= link_to 'Edit', edit_cart_path(@cart) %> |
-<%= link_to 'Back', carts_path %>
+<%= link_to 'Back', store_path %>
 <h2>Your Pragmatic Cart</h2>
 <div class="cart_title" >Your Cart</div>
 <table>
-<%= render(@cart) %>
+<%= render(@cart.line_items) %>
 <tr class="total_line" >
 <td colspan="2" >Total</td>
 <td class="total_cell" ><%= number_to_currency(@cart.total_price) %></td>
@@ -12,6 +12,7 @@
 </table>
 <%= button_to 'Empty cart', @cart, :method => :delete,
 :confirm => 'Are you sure?' %>
+
 
 
 

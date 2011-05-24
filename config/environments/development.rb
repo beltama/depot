@@ -7,11 +7,7 @@ Depot::Application.configure do
   	:domain => "gmail.com",
   	:authentication => "plain",
   	:user_name => "chonapochona",
-<<<<<<< HEAD
-  	:password => "53278805h",
-=======
   	:password => "*******",
->>>>>>> 412dc9ccab6c33dc8000007c9619ac3d9b07f56f
   	:enable_starttls_auto => true
   	}
 

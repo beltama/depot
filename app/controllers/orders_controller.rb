@@ -1,16 +1,17 @@
 class OrdersController < ApplicationController
+    skip_before_filter :authorize, :only => [:new, :create]
+
   # GET /orders
   # GET /orders.xml
-
   def index
     @orders = Order.paginate :page=>params[:page], :order=>'created_at desc',
-    :per_page => 10
+      :per_page => 10
+
     respond_to do |format|
       format.html # index.html.erb
-      format.xml { render :xml => @orders }
+      format.xml  { render :xml => @orders }
     end
   end
-
 
   # GET /orders/1
   # GET /orders/1.xml
@@ -31,7 +32,6 @@ class OrdersController < ApplicationController
       redirect_to store_url, :notice => "Your cart is empty"
       return
     end
-
     @order = Order.new
 
     respond_to do |format|

@@ -1,0 +1,30 @@
+<h1>About us</h1>
+<br>Welcome to the website of our company.</br>
+<br>We are pleased to provide our services.</br>
+<br>If you have any questions, needs, complaints do not hesitate to contact us.</br>
+<br>Thanks for visiting.</br>
+<h2>Contact</h2>
+<ul>
+<p>Location       :   St. Grand Parade 21   ,Ireland (Cork).</p>
+<p>Number Phone   :   0034675127318   -   353687556419</p>
+<p>Fax            :   0034675127320</p>
+<p>Contact email  :   chonapochona@hotmail.com</p>
+</ul>
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @abouts.each do |about| %>
+  <tr>
+    <td><%= link_to 'Show', about %></td>
+    <td><%= link_to 'Edit', edit_about_path(about) %></td>
+    <td><%= link_to 'Destroy', about, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

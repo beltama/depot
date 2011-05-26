@@ -28,11 +28,9 @@ options_for_select(LANGUAGES, I18n.locale.to_s),
 <% end %>
 <% end %>
 </div>
-<%= link_to 'Store', store_path %><br />
-<%= link_to 'Login', users_path %><br />
-<!--<a href="/say/about" >About</a>
-<a href="/say/about" ><%= t('.about') %></a><br />-->
-<%= link_to 'About', abouts_path %><br />
+<%= link_to  t('.store'),  store_path %><br />
+<%= link_to  t('.login'),  users_path %><br />
+<%= link_to  t('.about'),  abouts_path %><br />
 <% if session[:user_id] %>
 <br />
 <%= link_to 'Orders',

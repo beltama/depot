@@ -29,6 +29,9 @@ en:
       questions:   "Questions"
       news:        "News"
       contact:     "Contact"
+      about:       "About"
+      login:       "Login"
+      store:       "Store"
 #END:layout
 
 #START:cart

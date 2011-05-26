@@ -1,22 +1,23 @@
-<h1>About us</h1>
-<br>Welcome to the website of our company.</br>
-<br>We are pleased to provide our services.</br>
-<br>If you have any questions, needs, complaints do not hesitate to contact us.</br>
-<br>Thanks for visiting.</br>
-<h2>Contact</h2>
-<ul>
-<p>Location        &nbsp&nbsp : &nbsp&nbsp   St. Grand Parade 21, &nbsp Ireland (Cork)</p>
-<p>Number Phone  &nbsp&nbsp : &nbsp&nbsp    0034675127318   -   353687556419</p>
-<p>Fax            &nbsp&nbsp : &nbsp&nbsp   0034675127320</p>
-<p>Contact e-mail  &nbsp&nbsp : &nbsp&nbsp   chonapochona@hotmail.com</p>
-</ul>
+<h1>About us / Acerca de</h1>
 <table>
   <tr>
-    <th></th>
-    <th></th>
+    <th><br>Welcome to the website of our company.</br>
+        <br>We are pleased to provide our services.</br>
+        <br>If you have any questions, needs, complaints do not hesitate to contact us.</br>
+        <br>Thanks for visiting.</br></th>
+    <th><br>Bienvenido a la página web de nuestra empresa.</br>
+        <br>Nos complace ofrecer nuestros servicios.</br>
+        <br>Si usted tiene alguna pregunta, necesidades, quejas, no dude en contactar con nosotros.</br>
+        <br>Gracias por su visita.</br></th>
     <th></th>
   </tr>
-
+</table>
+<h2><hr>Contact<h2>
+<p></p>
+<p align="center">Adress / Dirección        &nbsp&nbsp : &nbsp&nbsp   St. Grand Parade 21, &nbsp Ireland (Cork)</p>
+<p align="center">Phone / Tlf  &nbsp&nbsp : &nbsp&nbsp    0034675127318   -   353687556419</p>
+<p align="center">Fax            &nbsp&nbsp : &nbsp&nbsp   0034675127320</p>
+<p align="center">E-mail  &nbsp&nbsp : &nbsp&nbsp   chonapochona@hotmail.com</p>
 <% @abouts.each do |about| %>
   <tr>
     <td><%= link_to 'Show', about %></td>
@@ -24,7 +25,7 @@
     <td><%= link_to 'Destroy', about, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
-</table>
+
 
 <br />
 

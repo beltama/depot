@@ -18,7 +18,7 @@ es:
   number:
     currency:
       format:
-        unit:      "$US"
+        unit:      "€"
         precision: 2
         separator: ","
         delimiter: "."
@@ -58,7 +58,7 @@ es:
       store:       "Tienda"
       login:       "Acceder"
       about:       "Acerca de"
-      contact:     "Contacto"
+      contact:     "Contacto"      
 #END:layout
 
 #START:cart
@@ -73,7 +73,7 @@ es:
   store:
     index:
       title_html:  "Su Cat&aacute;logo de Pragmatic"
-      add_html:    "A&ntilde;adir al Carrito"
+      add_html:    "A&ntilde;adir al Carrito"      
 #END:main
 
 #START:checkout

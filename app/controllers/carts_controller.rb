@@ -12,7 +12,7 @@ class CartsController < ApplicationController
   # GET /carts
   # GET /carts.xml
   def index
-    @carts = Cart.all
+    @carts = Cart.all   
 
     respond_to do |format|
       format.html # index.html.erb

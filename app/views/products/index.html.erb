@@ -10,6 +10,8 @@
 <dl>
 <dt><%= product.title %></dt>
 <dd><%= truncate(strip_tags(product.description), :length => 80) %></dd>
+<div class="price_line" >
+<span class="price" ><%= number_to_currency(product.price) %></span>
 </dl>
 </td>
 <td class="list_actions" >

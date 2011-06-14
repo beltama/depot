@@ -86,7 +86,7 @@
 }
 
 #main {
-  margin-left: 17em;
+  margin-left: 18.5em;
   padding-top: 4ex;
   padding-left: 2em;
   background: white;
@@ -181,8 +181,9 @@
 /* Styles for the cart in the sidebar */
 
 #cart, #cart table {
-  font-size: smaller;
+  font-size: small;
   color:     white;
+  margin-bottom: 20px;
 }
 
 #cart table {

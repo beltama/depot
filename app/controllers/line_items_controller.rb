@@ -1,5 +1,6 @@
 class LineItemsController < ApplicationController
-    skip_before_filter :authorize, :only => :create
+    #skip_before_filter :authorize, :only => :create
+    skip_before_filter :authorize
 
   # GET /line_items
   # GET /line_items.xml
@@ -82,7 +83,7 @@ class LineItemsController < ApplicationController
     @line_item.destroy
 
     respond_to do |format|
-      format.html { redirect_to(line_items_url) }
+      format.html { redirect_to(store_url) }
       format.xml  { head :ok }
     end
   end

@@ -6,22 +6,21 @@
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>Hashed password</th>
-    <th>Salt</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+    <th>Name/Hashed_password</th>
+    <th>Salt</th>    
+    <th>Created</th>         
+  </tr>  
 
 <% @users.each do |user| %>
   <tr>
-    <td><%= user.name %></td>
-    <td><%= user.hashed_password %></td>
-    <td><%= user.salt %></td>
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td align="center"><%= user.name %></td> 
+    <td><%= user.salt %></td>      
+    <td><%= user.created_at %></td>         
+  </tr>
+  <tr>
+     <th><%= user.hashed_password %></th>
+     <td>&nbsp</td>
+     <td align="right"><%= link_to 'Show', user %> <%= link_to 'Edit', edit_user_path(user) %> <%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>   
   </tr>
 <% end %>
 </table>

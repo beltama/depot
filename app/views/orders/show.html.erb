@@ -20,6 +20,10 @@
   <%= @order.pay_type %>
 </p>
 
+<p>
+  <b>Created:</b>
+  <%= @order.created_at %>
+</p>
 
 <%= link_to 'Edit', edit_order_path(@order) %> |
 <%= link_to 'Back', orders_path %>

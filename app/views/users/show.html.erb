@@ -15,6 +15,11 @@
   <%= @user.salt %>
 </p>
 
+<p>
+  <b>Created:</b>
+  <%= @user.created_at %>
+</p>
+
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
